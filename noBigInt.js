@@ -1,3 +1,9 @@
+// https://www.codewars.com/kata/525f4206b73515bffb000b21
+// Write a function that returns the sum of two numbers.
+// The input numbers are strings and the function must return a string.
+// NOTE: The input numbers are big. The input is a string of only digits. The numbers are positives
+// You cannot use BigInt!
+
 console.log(add("888", "222"));
 
 function add(a, b) {

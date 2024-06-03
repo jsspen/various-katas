@@ -1,3 +1,19 @@
+// https://www.codewars.com/kata/52b7ed099cdc285c300001cd
+// Write a function that accepts an array of intervals, and returns the sum of
+// all the interval lengths. Overlapping intervals should only be counted once.
+// Intervals are represented by a pair of integers in the form of an array.
+// The first value of the interval will always be less than the second value.
+
+console.log(
+  sumIntervals([
+    [1, 5],
+    [10, 20],
+    [1, 6],
+    [16, 19],
+    [5, 11],
+  ])
+);
+
 function sumIntervals(intervals) {
   intervals.sort((a, b) => a[0] - b[0]);
   let sum = 0;
